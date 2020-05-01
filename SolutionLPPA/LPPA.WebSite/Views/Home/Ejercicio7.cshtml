@@ -3,5 +3,212 @@
     ViewBag.Title = "Ejercicio7";
 }
 
-<h2>Ejercicio7</h2>
+<br />
+<div style="text-align: center;"><h1>Ejercicio 7 </h1></div>
+<br />
+<h4>Enunciado: </h4>
+<h5>
+    Crea una página web que contenga un formulario con los siguientes campos de información:
+
+    El nombre, con un control de tipo texto.
+    Los apellidos, con un control de tipo texto.
+    El sexo, con dos opciones excluyentes hombre o mujer.
+    El correo electrónico, con un control de tipo texto.
+    Una casilla de verificación con el texto "Deseo recibir información sobre novedades y ofertas".
+    Una casilla de verificación con el texto "Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre protección de datos".
+    Un botón de envío.
+    Además, tienes que tener en cuenta los siguientes requisitos:
+
+    El título de la página debe ser Formulario de registro - Mi web.
+    El método de envío del formulario debe ser GET.
+    El destino del envío del formulario debe ser "".
+    La longitud máxima de entrada de datos de los controles para el nombre y los apellidos debe ser 50 caracteres.
+    La casilla de verificación con el texto "Deseo recibir información sobre novedades y ofertas" debe estar activada por defecto.
+    Debes crear una página web que tenga el mismo aspecto que la siguiente imagen(imagen en pdf)
+</h5>
+
+<body>
+
+    <h1 style="text-align: center">Formulario de registro</h1>
+    <br />
+    <form action="" method="get">
+        <p>
+            Nombre: <input type="text" name="nombre" maxlength="50" />
+        </p>
+
+        <p>
+            Apellidos: <input type="text" name="apellidos" maxlength="50" />
+        </p>
+
+        <p>
+            Sexo: <input type="radio" name="sexo" value="h" /> hombre <input type="radio" name="sexo" value="m" /> mujer
+        </p>
+
+        <p>
+            Correo: <input type="text" name="correo" maxlength="100" />
+        </p>
+
+        <p>
+            <input type="checkbox" name="info" checked="checked" /> Deseo recibir información sobre novedades y ofertas
+        </p>
+
+        <p>
+            <input type="checkbox" name="condiciones" /> Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre protección de datos
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar" />
+        </p>
+    </form>
+
+</body>
+<br />
+_____________________________________________________________________________________________________________________________
+<br />
+<br />
+<h4>Enunciado: </h4>
+<h5>
+    Formularios 2
+
+    En la actividad anterior se te proponía realizar el siguiente formulario:
+
+    Crea una página web que contenga un formulario con los siguientes campos de información:
+
+    ▪ El nombre, con un control de tipo texto. ▪ Los apellidos, con un control de tipo texto. ▪ El sexo, con dos opciones excluyentes hombre o mujer. ▪ El correo electrónico, con un control de tipo texto. ▪ Una casilla de verificación con el texto "Deseo recibir información sobre novedades y ofertas". ▪ Una casilla de verificación con el texto "Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos". ▪ Un botón de envío.
+
+    Además, tienes que tener en cuenta los siguientes requisitos:
+
+    ▪ El título de la página debe ser Formulario de registro - Mi web. ▪ El método de envío del formulario debe ser GET. ▪ El destino del envío del formulario debe ser "". ▪ La longitud máxima de entrada de datos de los controles para el nombre y los apellidos debe ser 50 caracteres. ▪ La casilla de verificación con el texto "Deseo recibir información sobre novedades y ofertas" debe estar activada por defecto.
+
+    Al formulario anterior le tienes que añadir los siguientes campos de información:
+
+    ▪ Población, una lista desplegable con las opciones Alicante, Madrid, Sevilla y Valencia. ▪ Descripción, un área de texto multilínea.
+
+    Además, tienes que asociar la etiqueta de cada control a su control para mejorar la usabilidad y la accesibilidad.
+
+    Debes crear una página web que tenga el mismo aspecto que la siguiente imagen(imagen en pdf)
+
+</h5>
+
+<body>
+
+    <h1>Formulario de registro</h1>
+
+    <form action="" method="get">
+        <p>
+            <label for="nombre">Nombre:</label> <input type="text" name="nombre" id="nombre" maxlength="50" />
+        </p>
+
+        <p>
+            <label for="apellidos">Apellidos:</label> <input type="text" name="apellidos" id="apellidos" maxlength="50" />
+        </p>
+
+        <p>
+            Sexo: <input type="radio" name="sexo" id="sexo-h" value="h" /> <label for="sexo-h">hombre</label> <input type="radio" name="sexo" id="sexo-m" value="m" /> <label for="sexo-m">mujer</label>
+        </p>
+
+        <p>
+            <label for="correo">Correo:</label> <input type="text" name="correo" id="correo" maxlength="100" />
+        </p>
+
+        <p>
+            <label for="poblacion">Población:</label>
+            <select name="poblacion" id="poblacion">
+                <option>Alicante</option>
+                <option>Madrid</option>
+                <option>Sevilla</option>
+                <option>Valencia</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="descripcion">Descripción:</label>
+<textarea name="descripcion" id="descripcion" rows="6" cols="60"></textarea>
+        </p>
+
+        <p>
+            <input type="checkbox" name="info" id="info" checked="checked" /> <label for="info">Deseo recibir información sobre novedades y ofertas</label>
+        </p>
+
+        <p>
+            <input type="checkbox" name="condiciones" id="condiciones" /> <label for="condiciones"> Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre protección de datos</label>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar" />
+        </p>
+    </form>
+
+</body>
+
+_____________________________________________________________________________________________________________________________
+<h4>Enunciado: </h4>
+<h5>
+    Formulario HTML5
+    Crea una página web que contenga un formulario con los siguientes campos de información:
+    ▪ Nombre, con un control de tipo texto obligatorio y con autofoco. ▪ Correo electrónico, con un control de tipo email obligatorio. ▪ URL, con un control de tipo url que muestre la ayuda "Escribe la URL de tu página web personal". ▪ Fecha, con un control de tipo date. ▪ Tiempo, con un control de tipo time. ▪ Fecha y hora, con un control de tipo datetime. ▪ Mes, con un control de tipo month. ▪ Semana, con un control de tipo week. ▪ Número, con un control de tipo number que limite la entrada a un valor entre -10 y 10. ▪ Teléfono, con un control de tipo tel. ▪ Término de búsqueda, con un control de tipo search. ▪ Color favorito, con un control de tipo color. ▪ Un botón de envío.
+
+    Además, tienes que tener en cuenta los siguientes requisitos:
+    El título de la página debe ser Formulario de prueba de HTML5.
+    El método de envío del formulario debe ser GET.
+    El destino del envío del formulario debe ser "".
+    Nota: si al validar el código HTML de tu página web con el validador del W3C se muestran mensajes de advertencia como The date input type is not supported in all browsers. Please be sure to test, and consider using a polyfill. no te preocupes, el validador te está avisando de que lleves cuidado al usar una característica de HTML5 que no está admitida por todos los navegadores actuales.
+</h5>
+
+<body>
+
+    <form action="" method="get">
+        <p>
+            Nombre: <input type="text" name="name_control" autofocus required />
+        </p>
+
+        <p>
+            Correo electrónico: <input type="email" name="email_control" required />
+        </p>
+
+        <p>
+            URL: <input type="url" name="url_control" placeholder="Escribe la URL de tu Página WEB personal" />
+        </p>
+
+        <p>
+            Fecha: <input type="date" name="date_control" />
+        </p>
+
+        <p>
+            Tiempo: <input type="time" name="time_control" />
+        </p>
+
+        <p>
+            Fecha y hora: <input type="datetime" name="datetime_control" />
+        </p>
+
+        <p>
+            Mes: <input type="month" name="month_control" />
+        </p>
+
+        <p>
+            Semana: <input type="week" name="week_control" />
+        </p>
+
+        <p>
+            Número (min -10, max 10): <input type="number" name="number_control" min="-10" max="10" value="0" />
+        </p>
+
+        <p>
+            Teléfono: <input type="tel" name="tel_control" />
+        </p>
+
+        <p>
+            Término de búsqueda: <input type="search" name="search_control" />
+        </p>
+
+        <p>
+            Color favorito: <input type="color" name="color_control" />
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar" />
+        </p>
+    </form>
+</body>
 
