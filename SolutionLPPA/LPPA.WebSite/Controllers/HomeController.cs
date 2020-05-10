@@ -73,5 +73,14 @@ namespace LPPA.WebSite.Controllers
         {
             return View();
         }
+
+        public ActionResult Ejercicios3CSS()
+        {
+            return View();
+        }
+        public ActionResult Ejercicios4CSS()
+        {
+            return View();
+        }
     }
 }

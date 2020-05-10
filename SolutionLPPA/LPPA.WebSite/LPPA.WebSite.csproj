@@ -171,6 +171,8 @@
     <Content Include="Views\Home\Ejercicio7.cshtml" />
     <Content Include="Views\Home\Ejercicios1CSS.cshtml" />
     <Content Include="Views\Home\Ejercicios2CSS.cshtml" />
+    <Content Include="Views\Home\Ejercicios3CSS.cshtml" />
+    <Content Include="Views\Home\Ejercicios4CSS.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
